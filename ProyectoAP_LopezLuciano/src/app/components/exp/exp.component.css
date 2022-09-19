@@ -1,0 +1,14 @@
+.row{
+    paddin: 20px;
+}
+div{
+    background-color:rgb(97, 97, 97);
+}
+
+h1,h3{
+    display:inline;
+}
+
+#Trabajos{
+    text-indent:2ex;
+}
