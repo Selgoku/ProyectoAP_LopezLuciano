@@ -14,7 +14,21 @@ div{
 }
 
 /*Style FotoPerfil*/
-/*575-576Px*/
+
+/*Max-width*/
+@media (max-width:575px){
+    #FotoPerfil{
+        position:absolute;
+        width: 13%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 2px cornflowerblue;
+        left: 2%;
+        top: 100%;
+    }
+}
+
+
+/*575*/
 
 @media (min-width:576px){
     #FotoPerfil{
@@ -27,16 +41,6 @@ div{
     }
 }
 
-@media(max-width:575px){
-    #FotoPerfil{
-        position:absolute;
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 36%;
-        top: 50%;
-    }
-}
 
 /*768min*/
 
@@ -47,18 +51,7 @@ div{
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 4%;
-        top: 54%;
-    }
-}
-
-@media(max-width:767px){
-    #FotoPerfil{
-        position:absolute;
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 36%;
-        top: 50%;
+        top: 104%;
     }
 }
 
@@ -70,65 +63,45 @@ div{
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 4%;
-        top: 54%;
+        top: 4%;
     }
 }
 
-@media(max-width:991px){
-    #FotoPerfil{
-        position:absolute;
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 36%;
-        top: 50%;
-    }
-}
 
 /*1200px min*/
 
 @media (min-width:1200px){
     #FotoPerfil{
         position:absolute;
-        width: 15%;
+        width: 13%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 4%;
-        top: 64%;
+        left: 6%;
+        top: 100%;
     }
 }
 
-@media(max-width:1199px){
+@media (min-width:1300px){
     #FotoPerfil{
         position:absolute;
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 36%;
-        top: 50%;
+        width: 13%;
+        border-radius: 54%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 4%;
+        top: 110%;
     }
 }
+
 
 /*1400px min*/
 
 @media (min-width:1400px){
     #FotoPerfil{
         position:absolute;
-        width: 13%;
+        width: 14%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 2%;
-        top: 110%;
-    }
-}
-
-@media(max-width:1399px){
-    #FotoPerfil{
-        position:absolute;
-        width: 13%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
         left: 3%;
-        top: 109%;
+        top: 112%;
     }
 }
