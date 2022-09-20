@@ -19,11 +19,11 @@ div{
 @media (max-width:575px){
     #FotoPerfil{
         position:absolute;
-        width: 28%;
+        width: 45%;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
-        left: 37%;
-        top: 47%;
+        left: 28%;
+        top: 37%;
     }
 }
 
@@ -76,8 +76,8 @@ div{
         width: 15%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 3%;
-        top: 107%;
+        left: 2%;
+        top: 98%;
     }
 }
 
