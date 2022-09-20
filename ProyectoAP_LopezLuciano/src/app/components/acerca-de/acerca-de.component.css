@@ -19,11 +19,11 @@ div{
 @media (max-width:575px){
     #FotoPerfil{
         position:absolute;
-        width: 45%;
+        width: 40%;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
-        left: 28%;
-        top: 37%;
+        left: 30%;
+        top: 41%;
     }
 }
 
@@ -33,11 +33,11 @@ div{
 @media (min-width:576px){
     #FotoPerfil{
         position:absolute;
-        width: 15%;
+        width: 17%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 2%;
-        top: 64%;
+        top: 55%;
     }
 }
 
@@ -47,11 +47,11 @@ div{
 @media (min-width:768px){
     #FotoPerfil{
         position:absolute;
-        width: 15%;
+        width: 17%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 3%;
-        top: 78%;
+        left: 2%;
+        top: 75%;
     }
 }
 
@@ -77,7 +77,7 @@ div{
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 2%;
-        top: 98%;
+        top: 103%;
     }
 }
 
@@ -87,8 +87,8 @@ div{
         width: 14%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 2%;
-        top: 111%;
+        left: 3%;
+        top: 112%;
     }
 }
 
@@ -101,7 +101,7 @@ div{
         width: 14%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 5%;
-        top: 112%;
+        left: 3%;
+        top: 118%;
     }
 }
