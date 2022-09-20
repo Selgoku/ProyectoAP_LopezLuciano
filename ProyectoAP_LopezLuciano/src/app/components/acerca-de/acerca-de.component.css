@@ -108,7 +108,7 @@ div{
 @media (min-width:1400px){
     #FotoPerfil{
         position:absolute;
-        width: 14%;
+        width: 12%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 3%;
