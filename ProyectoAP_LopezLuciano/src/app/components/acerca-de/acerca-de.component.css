@@ -10,7 +10,7 @@ div{
 
 #Nombre{
     font-weight: bold;
-    margin-top: 30%;
+    margin-top: 12%;
 }
 
 /*Style FotoPerfil*/
@@ -23,10 +23,20 @@ div{
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
         left: 30%;
-        top: 41%;
+        top: 36%;
     }
 }
 
+@media (min-width:425px){
+    #FotoPerfil{
+        position:absolute;
+        width: 40%;
+        border-radius: 54%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 30%;
+        top: 31%;
+    }
+}
 
 /*575*/
 
@@ -62,8 +72,8 @@ div{
         width: 15%;
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 2%;/*4*/
-        top: 95%;
+        left: 2%;
+        top: 93%;
     }
 }
 
@@ -102,6 +112,6 @@ div{
         border-radius: 54%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 3%;
-        top: 118%;
+        top: 116%;
     }
 }
