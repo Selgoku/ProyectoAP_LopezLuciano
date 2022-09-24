@@ -49,4 +49,9 @@ public class PersonaController {
         ipersonaService.savePersona(persona);
         return persona;
     }
+    
+    @PutMappin ("/personas/traer/perfil")
+    public Persona finPersona(){
+        return ipersonaService.findPersona((long)1);
+    }
 }
