@@ -1,13 +1,22 @@
 <div class="row">
-    <h1>Experiencia Laboral</h1>
-    <div class="col-lg-11">
-        <ul id="Trabajos">
-            <li>
-                <h1>Trabajo1</h1> -<h3>(years)</h3>
-            </li>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime odio, eos vero, delectus tempora, sit eaque eum quis velit nemo cupiditate rem veniam culpa hic tenetur consectetur mollitia repudiandae accusamus?
-            </p>
-        </ul>
-    </div>
+  <h1>Experiencia Laboral</h1>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-info" routerLink="/nuevaexp" *ngIf="isLogged"> 
+        Nueva Experiencia
+    </button>
+  </div>
+
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of exp">
+          <td><h2>{{Experiencia.nombreE}}</h2></td>
+          <td>{{Experiencia.descripcionE}}</td>
+          <td>Editar</td>
+          <td>Borrar</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
