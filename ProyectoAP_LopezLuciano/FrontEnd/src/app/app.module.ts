@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { NuevaExpComponent } from './components/exp/nueva-exp.component';
 import { EditExpComponent } from './components/exp/edit-exp.component';
+import { NuevaeduComponent } from './components/edu/nuevaedu.component';
+import { EditeduComponent } from './components/edu/editedu.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { EditExpComponent } from './components/exp/edit-exp.component';
     LoginComponent,
     NuevaExpComponent,
     EditExpComponent,
+    NuevaeduComponent,
+    EditeduComponent,
   ],
   imports: [
     BrowserModule,
