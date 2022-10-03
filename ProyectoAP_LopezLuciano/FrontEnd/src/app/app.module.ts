@@ -19,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { NuevaExpComponent } from './components/exp/nueva-exp.component';
+import { EditExpComponent } from './components/exp/edit-exp.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NuevaExpComponent } from './components/exp/nueva-exp.component';
     HomeComponent,
     LoginComponent,
     NuevaExpComponent,
+    EditExpComponent,
   ],
   imports: [
     BrowserModule,
