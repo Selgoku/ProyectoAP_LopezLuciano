@@ -22,6 +22,8 @@ import { NuevaExpComponent } from './components/exp/nueva-exp.component';
 import { EditExpComponent } from './components/exp/edit-exp.component';
 import { NuevaeduComponent } from './components/edu/nuevaedu.component';
 import { EditeduComponent } from './components/edu/editedu.component';
+import { EditSkillComponent } from './components/hard-ysof/edit-skill.component';
+import { NewSkillComponent } from './components/hard-ysof/new-skill.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { EditeduComponent } from './components/edu/editedu.component';
     EditExpComponent,
     NuevaeduComponent,
     EditeduComponent,
+    EditSkillComponent,
+    NewSkillComponent,
   ],
   imports: [
     BrowserModule,
