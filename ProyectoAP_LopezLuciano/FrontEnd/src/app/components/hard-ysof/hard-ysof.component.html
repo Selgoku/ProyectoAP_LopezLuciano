@@ -1,9 +1,15 @@
 <div class="row">
         <h1>Hard and Soft Skills</h1>
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
+        <div class="col-lg-2"> 
+            <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+        </div>
+
+        <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
             <circle-progress
-            [percent]="50"
+            [percent]="(skill.porcentaje)"
             [radius]="100"
+            [title]="(skill.nombre)"
+            [titleColor]="'#15345CD8'"
             [outerStrokeWidth]="16"
             [innerStrokeWidth]="8"
             [outerStrokeColor]="'#78C000'"
@@ -11,4 +17,17 @@
             [animation]="true"
             [animationDuration]="300"
         ></circle-progress>
+
+
+        <td *ngIf="isLogged">
+            <button class="btn btn-dark" routerLink="/edithys/{{ skill.id }}">
+                <i class="bi bi-pencil"></i>
+                Editar
+            </button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash"></i></button>
+        </td>
+    </div>
 </div>

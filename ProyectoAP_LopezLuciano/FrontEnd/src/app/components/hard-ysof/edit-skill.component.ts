@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-skill.component.css']
 })
 export class EditSkillComponent implements OnInit {
-
+  skill: Skill = null;
   constructor() { }
 
   ngOnInit(): void {
