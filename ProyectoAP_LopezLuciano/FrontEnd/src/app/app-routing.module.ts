@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { EditeduComponent } from './components/edu/editedu.component';
 import { NuevaeduComponent } from './components/edu/nuevaedu.component';
 import { EditExpComponent } from './components/exp/edit-exp.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'editedu/:id', component:EditeduComponent},
   {path: 'newskill', component: NewSkillComponent},
   {path: 'editskill/:id', component: EditSkillComponent},
+  {path: 'editacercade/:id', component: EditAcercaDeComponent},
 ];
 
 @NgModule({
