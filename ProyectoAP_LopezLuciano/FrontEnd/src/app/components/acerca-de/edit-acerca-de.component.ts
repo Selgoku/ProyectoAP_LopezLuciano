@@ -10,7 +10,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-acerca-de.component.css']
 })
 export class EditAcercaDeComponent implements OnInit {
-  persona:persona = null;
+  persona: persona = null;
   constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService: ImageService) { }
 
   ngOnInit(): void {
@@ -28,9 +28,9 @@ export class EditAcercaDeComponent implements OnInit {
   onUpdate():void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.persona.img = this.imageService.url
-    this.personaService.detail(id).subscribe(
+    this.personaService.update(id, this.persona).subscribe(
       data => {
-        this.persona = data;
+        this.router.navigate(['']);
       }, err =>{
         alert ("Error al modificar");
         this.router.navigate(['']);

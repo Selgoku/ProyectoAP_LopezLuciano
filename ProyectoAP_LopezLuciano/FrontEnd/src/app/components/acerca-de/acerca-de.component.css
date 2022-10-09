@@ -5,6 +5,7 @@ div{
     background-color:rgb(97, 97, 97);
     text-align:center;
 }
+
 .descripcion{
     display:flex;
     justify-content: content-box;
