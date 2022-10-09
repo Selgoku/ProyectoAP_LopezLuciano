@@ -5,15 +5,11 @@ div{
     background-color:rgb(97, 97, 97);
     text-align:center;
 }
-
-/*Style Nombre*/
-
-#Nombre{
-    font-weight: bold;
-    margin-top: 12%;
+.descripcion{
+    display:flex;
+    justify-content: content-box;
+    align-items: center;
 }
-
-/*Style FotoPerfil*/
 
 /*Max-width*/
 @media (max-width:575px){
