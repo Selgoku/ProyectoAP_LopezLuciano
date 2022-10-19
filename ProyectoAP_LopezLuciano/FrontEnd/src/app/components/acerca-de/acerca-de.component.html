@@ -1,11 +1,19 @@
-<div>
-    <button type="button" class="btn btn-Primary" routerLink="/editacercade/1" *ngIf="isLogged">
+<!--<div>
+    <button type="button" class="btn btn-info" routerLink="/editacercade/1" *ngIf="isLogged">
         Editar Usuario
     </button>
-</div>
-<div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src={{persona.img}} class="img-fluid" id="FotoPerfil">
+</div> -->
+
+<div class="row"  *ngIf="persona" >
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="editar">
+        <div>
+            <td *ngIf="isLogged">
+            <button class="btn btn-dark" routerLink="/editacercade/1">
+                <i class="bi bi-pencil"></i>
+            </button>
+            </td>
+        </div>
+        <img src={{persona.img}} class="img-fluid" id="FotoPerfil" >
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <P id="Nombre">{{persona.nombre}} {{persona.apellido}}</P>
