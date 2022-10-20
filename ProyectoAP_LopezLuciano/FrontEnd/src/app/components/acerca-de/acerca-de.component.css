@@ -12,24 +12,97 @@ div{
     align-items: center;
 }
 
-@media (max-width:575px){
+
+#editar{
+    align-items: center;
+ }
+
+/*Max-width*/
+@media (max-width: 575.98px){
     #FotoPerfil{
         position:absolute;
-        width: 36%;
+        width: 30%;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
-        left: 30%;
-        top: 38%;
+        left: 35%;
+        top: 54%;
     }
 }
+
+/*575*/
 
 @media (min-width:576px){
     #FotoPerfil{
         position:absolute;
-        width: 12%;
+        width: 17%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 2%;
+        top: 55%;
+    }
+}
+
+
+/*768min*/
+
+@media (min-width:768px){
+    #FotoPerfil{
+        position:absolute;
+        width: 13%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 3%;
+        top: 57%;
+    }
+}
+
+/*992pxmin*/
+@media (min-width:992px){
+    #FotoPerfil{
+        position:absolute;
+        width: 13%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 4%;
+        top: 63%;
+    }
+}
+
+
+/*1200px min*/
+
+@media (min-width:1200px){
+    #FotoPerfil{
+        position:absolute;
+        width: 13%;
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 6%;
-        top: 48%;
+        top: 52%;
+    }
+}
+
+@media (min-width:1300px){
+    #FotoPerfil{
+        position:absolute;
+        width: 11%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 6%;
+        top: 57%;
+    }
+}
+
+
+/*1400px min*/
+
+@media (min-width:1400px){
+    #FotoPerfil{
+        position:absolute;
+        width: 9%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px cornflowerblue;
+        left: 7%;
+        top: 100%;
     }
 }
