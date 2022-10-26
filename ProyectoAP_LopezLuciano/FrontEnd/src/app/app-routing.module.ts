@@ -9,6 +9,7 @@ import { EditSkillComponent } from './components/hard-ysof/edit-skill.component'
 import { NewSkillComponent } from './components/hard-ysof/new-skill.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NuevoproyectoComponent } from './components/proyecto/nuevoproyecto.component';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'editskill/:id', component: EditSkillComponent},
   {path: 'editacercade/:id', component: EditAcercaDeComponent},
   {path: 'nuevoproyecto', component: NuevoproyectoComponent},
+  {path: 'editproyecto/:id', component: EditproyectoComponent},
 ];
 
 @NgModule({
