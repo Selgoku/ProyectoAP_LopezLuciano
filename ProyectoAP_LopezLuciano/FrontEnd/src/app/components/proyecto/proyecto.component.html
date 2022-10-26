@@ -1,13 +1,28 @@
 <div class="row">
     <h1>Proyectos!</h1>
-    <div class="contenedor">
+    <div>
+        <button type="button" class="btn btn-info" routerLink="/nuevoproyecto" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
+    </div>
+    <div class="contenedor" *ngFor="let proyecto of Proyecto">
         <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h1>Proyecto1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus similique nesciunt, sunt quisquam a sequi recusandae libero ad. Quam aliquid impedit repudiandae, incidunt vitae quos vero alias saepe iste.    
+            <h1>{{proyecto.nombre}}</h1>
+            <td *ngIf="isLogged">
+                <button class="btn btn-dark" routerLink="/editproyecto/{{ proyecto.id }}">
+                    <i class="bi bi-pencil"></i>
+                    Editar
+                </button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(proyecto.id)">
+                    <i class="bi bi-trash"></i>Borrar</button>
+            </td>
+            <p>{{proyecto.descripcion}}
             </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-                <a href="https://frontendlal.web.app"><img src="../../../assets/FotoProye.png" class="img-fluid img-Proye"></a>
+                <a href={{proyecto.enlace}}><img src={{proyecto.img}} class="img-fluid img-Proye"></a>
         </div>
     </div>
 </div>

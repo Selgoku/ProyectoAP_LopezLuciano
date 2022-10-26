@@ -39,4 +39,5 @@ public class SProyecto {
     public boolean existsByNombre(String nombre) {
         return Rproyecto.existsByNombre(nombre);
     }
+    
 }
