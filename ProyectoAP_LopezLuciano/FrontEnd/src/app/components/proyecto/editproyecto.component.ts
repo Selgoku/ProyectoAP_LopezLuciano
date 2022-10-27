@@ -43,7 +43,7 @@ export class EditproyectoComponent implements OnInit {
     const id = this.Proyecto.nombre;
     const name = "proyecto_" + id;
     const refe = `proyectos/`;
-    const refe2 ='proyectos';
-    this.imageService.uploadImage($event, name, refe,refe2)
+    const refe2 ='proyectos/'+ name;
+    this.imageService.uploadImage2($event, name, refe,refe2)
   }
 }

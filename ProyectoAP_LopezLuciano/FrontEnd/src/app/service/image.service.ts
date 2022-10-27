@@ -29,6 +29,24 @@ export class ImageService {
     .catch(error =>console.log(error))
   }
 
+  public uploadImage2($event: any, name: string, refe:string, refe2:string){
+    const file = $event.target.files[0]
+    const imgRef = ref(this.storage, refe + name)
+    uploadBytes(imgRef, file)
+    .then(response => {this.getImages2(refe2)})
+    .catch(error => console.log(error))
+  }
+
+  getImages2(refe2:string){
+    const imagesRef = ref(this.storage, refe2)
+    list(imagesRef)
+    .then(async response => {
+        this.url = await getDownloadURL(imagesRef);
+        console.log("URL de imagen =" + this.url);
+    })
+    .catch(error =>console.log(error))
+  }
+
   clearUrl() {
     this.url = "";
   }

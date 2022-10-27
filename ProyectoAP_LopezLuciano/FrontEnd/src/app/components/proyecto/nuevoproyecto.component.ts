@@ -38,8 +38,7 @@ export class NuevoproyectoComponent implements OnInit {
     const id = this.nombre;
     const name = "proyecto_" + id;
     const refe = `proyectos/`;
-    const refe2 ='proyectos';
-    this.imageService.uploadImage($event, name, refe,refe2)
-    //this.img = this.imageService.url;  <- Esto no va.
+    const refe2 ='proyectos/'+name;
+    this.imageService.uploadImage2($event, name, refe,refe2)
   }
 }
