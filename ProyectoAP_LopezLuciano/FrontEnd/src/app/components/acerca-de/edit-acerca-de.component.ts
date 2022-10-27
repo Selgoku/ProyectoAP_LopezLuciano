@@ -36,11 +36,14 @@ export class EditAcercaDeComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+    this.imageService.clearUrl();
   }
 
   uploadImage($event:any){
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "perfil_" + id;
-    this.imageService.uploadImage($event, name)
+    const refe = `imagen/`;
+    const refe2 ='imagen';
+    this.imageService.uploadImage($event, name, refe,refe2)
   }
 }

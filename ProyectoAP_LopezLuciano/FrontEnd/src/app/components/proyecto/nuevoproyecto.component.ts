@@ -21,7 +21,8 @@ export class NuevoproyectoComponent implements OnInit {
   }
 
   onCreate(): void{
-    const Proyecto = new proyecto(this.nombre, this.descripcion, this.enlace, this.img);
+    const Proyecto = new proyecto(this.nombre, this.descripcion, this.enlace, this.img= this.imageService.url);
+    //Proyecto.img = this.imageService.url;
     this.proyectoS.save(Proyecto).subscribe(
       data =>{
         alert("Proyecto añadido correctamente");
@@ -30,12 +31,15 @@ export class NuevoproyectoComponent implements OnInit {
         alert("Error");
       }
     )
+    this.imageService.clearUrl();
   }
   
   uploadImage($event:any){
     const id = this.nombre;
-    const name = "proyecto" + id;
-    this.imageService.uploadImage($event, name)
-    this.img = this.imageService.url;
+    const name = "proyecto_" + id;
+    const refe = `proyectos/`;
+    const refe2 ='proyectos';
+    this.imageService.uploadImage($event, name, refe,refe2)
+    //this.img = this.imageService.url;  <- Esto no va.
   }
 }

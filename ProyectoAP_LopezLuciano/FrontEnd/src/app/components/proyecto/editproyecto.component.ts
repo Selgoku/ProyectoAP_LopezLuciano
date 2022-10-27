@@ -36,11 +36,14 @@ export class EditproyectoComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+    this.imageService.clearUrl();
   }
   
   uploadImage($event:any){
     const id = this.Proyecto.nombre;
-    const name = "proyecto" + id;
-    this.imageService.uploadImage($event, name)
+    const name = "proyecto_" + id;
+    const refe = `proyectos/`;
+    const refe2 ='proyectos';
+    this.imageService.uploadImage($event, name, refe,refe2)
   }
 }
