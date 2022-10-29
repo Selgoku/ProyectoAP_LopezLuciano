@@ -21,14 +21,41 @@ div{
 @media (max-width: 575.98px){
     #FotoPerfil{
         position:absolute;
-        width: 30%;
+        width: 210px;
+        height: 210px;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
-        left: 35%;
-        top: 54%;
+        left: 30%;
+        top: 56%;
     }
 }
 
+
+@media (max-width: 425.98px){
+    #FotoPerfil{
+        position:absolute;
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 2px cornflowerblue;
+        left: 25%;
+        top: 52%;
+    }
+}
+
+@media (max-width: 375.98px){
+    #FotoPerfil{
+        position:absolute;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 2px cornflowerblue;
+        left: 26%;
+        top: 51%;
+    }
+}
+
+/*Min-Width*/
 /*575*/
 
 @media (min-width:576px){
@@ -48,11 +75,11 @@ div{
 @media (min-width:768px){
     #FotoPerfil{
         position:absolute;
-        width: 13%;
+        width: 15%;
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 3%;
-        top: 57%;
+        top: 61%;
     }
 }
 
@@ -64,7 +91,7 @@ div{
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 4%;
-        top: 63%;
+        top: 74%;
     }
 }
 
@@ -77,19 +104,19 @@ div{
         width: 13%;
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 6%;
-        top: 52%;
+        left: 4%;
+        top: 85%;
     }
 }
 
 @media (min-width:1300px){
     #FotoPerfil{
         position:absolute;
-        width: 11%;
+        width: 12%;
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
-        left: 6%;
-        top: 57%;
+        left: 4%;
+        top: 88%;
     }
 }
 
@@ -99,10 +126,10 @@ div{
 @media (min-width:1400px){
     #FotoPerfil{
         position:absolute;
-        width: 9%;
+        width: 11%;
         border-radius: 50%;
         box-shadow: 3px 3px 3px cornflowerblue;
         left: 7%;
-        top: 100%;
+        top: 98%;
     }
 }
