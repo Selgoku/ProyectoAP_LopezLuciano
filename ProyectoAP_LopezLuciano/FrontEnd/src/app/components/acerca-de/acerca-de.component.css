@@ -7,9 +7,10 @@ div{
 }
 
 .descripcion{
-    display:flex;
-    justify-content: content-box;
-    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
 }
 
 
@@ -39,31 +40,31 @@ div{
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
         left: 25%;
-        top: 52%;
+        top: 65%;
     }
 }
 
 @media (max-width: 375.98px){
     #FotoPerfil{
         position:absolute;
-        width: 170px;
-        height: 170px;
+        width: 0px;
+        /*height: 170px;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
         left: 26%;
-        top: 66%;
+        top: 66%;*/
     }
 }
 
 @media (max-width: 325.98px){
     #FotoPerfil{
         position:absolute;
-        width: 156px;
-        height: 156px;
+        width: 0px;
+        /*height: 156px;
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
         left: 26%;
-        top: 55%;
+        top: 55%;*/
     }
 }
 
