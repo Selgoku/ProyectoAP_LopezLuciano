@@ -4,14 +4,25 @@
 }
 
 .contenedor{
-    width:auto;
+    width:fit-content;
 }
 
-.parte1, .parte2{
-    display: inline-block;
-    text-align: justify;
+.parte1{
+    display: inline-grid;
+    text-align: center;
+    justify-content: space-between;
+    justify-items: center
+}
+
+.parte2{
+    display: flex;
+    flex-direction: right;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .img-Proye{
-    box-shadow: 10px 10px 30px #fff;
+    box-shadow: -5px 0px 17px #FCC;
+    align-items: center;
+    width: fit-content;
 }

@@ -40,31 +40,19 @@ div{
         border-radius: 50%;
         box-shadow: 3px 3px 2px cornflowerblue;
         left: 25%;
-        top: 65%;
+        top: 55%;
     }
 }
 
 @media (max-width: 375.98px){
     #FotoPerfil{
-        position:absolute;
         width: 0px;
-        /*height: 170px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 26%;
-        top: 66%;*/
     }
 }
 
 @media (max-width: 325.98px){
     #FotoPerfil{
-        position:absolute;
         width: 0px;
-        /*height: 156px;
-        border-radius: 50%;
-        box-shadow: 3px 3px 2px cornflowerblue;
-        left: 26%;
-        top: 55%;*/
     }
 }
 
