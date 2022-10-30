@@ -30,6 +30,7 @@ import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NuevoproyectoComponent } from './components/proyecto/nuevoproyecto.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
+import { ModalsComponent } from './components/modals/modals.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { EditproyectoComponent } from './components/proyecto/editproyecto.compon
     EditAcercaDeComponent,
     NuevoproyectoComponent,
     EditproyectoComponent,
+    ModalsComponent,
   ],
   imports: [
     BrowserModule,
