@@ -31,3 +31,17 @@
     box-shadow: -5px 0px 17px #FCC;
     width: fit-content;
 }
+
+
+#demoFont {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    word-spacing: 4.2px;
+    color: #382314;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    }
