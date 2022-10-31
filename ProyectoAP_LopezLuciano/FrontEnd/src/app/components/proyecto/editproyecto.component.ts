@@ -32,8 +32,7 @@ export class EditproyectoComponent implements OnInit {
       data =>{
         this.router.navigate(['']);
       }, err =>{
-        alert ("Error al modificar Proyecto");
-        this.router.navigate(['']);
+        alert ("Error al modificar Proyecto. Revisar que los campos esten bien");
       }
     )
     this.imageService.clearUrl();
