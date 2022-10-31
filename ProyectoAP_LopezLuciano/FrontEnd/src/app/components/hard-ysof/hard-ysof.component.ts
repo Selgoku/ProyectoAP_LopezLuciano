@@ -14,6 +14,13 @@ export class HardYsofComponent implements OnInit {
   constructor(private skillS: SkillService, private tokenService: TokenService) { }
   isLogged= false;
 
+
+  formatSubtitle = (percent: number):string => {
+    var num= percent;
+    var str = num.toString();
+    return str;
+  }
+  
   ngOnInit(): void {
     this.cargarSkills();
     if(this.tokenService.getToken()){

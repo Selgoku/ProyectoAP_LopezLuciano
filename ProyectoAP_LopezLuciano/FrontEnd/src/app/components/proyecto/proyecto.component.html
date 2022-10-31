@@ -1,11 +1,11 @@
-<div class="row">
+<div class="title">
     <h1>Proyectos!</h1>
     <div>
         <button type="button" class="btn btn-info" routerLink="/nuevoproyecto" *ngIf="isLogged">
             Agregar Proyecto
         </button>
     </div>
-    <div class="contenedor" *ngFor="let proyecto of Proyecto">
+    <div class="row" *ngFor="let proyecto of Proyecto">
         <div class="col-sm-12 col-md-7 col-lg-7 parte1">
             <h1>{{proyecto.nombre}}</h1>
             <p>{{proyecto.descripcion}}
