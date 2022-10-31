@@ -1,10 +1,13 @@
 <div class="title">
     <h1>Proyectos!</h1>
     <div>
-        <button type="button" class="btn btn-info" routerLink="/nuevoproyecto" *ngIf="isLogged">
-            Agregar Proyecto
+        <button type="button" class="btn btn-info" (click)="modal.showModal()" *ngIf="isLogged">
+            Nuevo Proyecto
         </button>
-    </div>
+        <app-modals [title]="'Nuevo Proyecto'" #modal>
+            <app-nuevoproyecto></app-nuevoproyecto>
+        </app-modals>
+    </div> 
     <div class="row" *ngFor="let proyecto of Proyecto">
         <div class="col-sm-12 col-md-7 col-lg-7 parte1">
             <h1>{{proyecto.nombre}}</h1>
