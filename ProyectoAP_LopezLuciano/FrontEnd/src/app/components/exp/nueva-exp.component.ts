@@ -16,6 +16,10 @@ export class NuevaExpComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  refresh(): void { 
+    window.location.reload(); 
+  }
+  
   onCreate(): void {
     const expe = new Experiencia(this.nombreE, this.descripcionE);
     this.sExperiencia.save(expe).subscribe(data => {

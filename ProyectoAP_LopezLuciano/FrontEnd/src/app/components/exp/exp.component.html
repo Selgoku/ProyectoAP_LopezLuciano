@@ -1,9 +1,12 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-info" routerLink="/nuevaexp" *ngIf="isLogged">
+    <div>
+        <button type="button" class="btn btn-info" (click)="modal.showModal()" *ngIf="isLogged">
             Nueva Experiencia
         </button>
+        <app-modals [title]="'Nueva Experiencia'" #modal>
+            <app-nueva-exp></app-nueva-exp>
+        </app-modals>
     </div>
 
     <div class="col lg 1"></div>

@@ -18,6 +18,10 @@ export class NuevaeduComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  refresh(): void { 
+    window.location.reload(); 
+  }
+  
   onCreate(): void{
     const educacion = new Educacion(this.nombreE, this.descripcionE);
     this.educacionS.save(educacion).subscribe(

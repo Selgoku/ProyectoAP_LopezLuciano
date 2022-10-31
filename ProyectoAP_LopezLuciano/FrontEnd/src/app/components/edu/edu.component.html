@@ -1,9 +1,12 @@
 <div class="row">
     <h1>Estudios</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-info" routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Estudio
+    <div>
+        <button type="button" class="btn btn-info" (click)="modal.showModal()" *ngIf="isLogged">
+            Nuevo Estudio
         </button>
+        <app-modals [title]="'Nuevo Estudio'" #modal>
+            <app-nuevaedu></app-nuevaedu>
+        </app-modals>
     </div>
 
     <div class="col lg 1"></div>
