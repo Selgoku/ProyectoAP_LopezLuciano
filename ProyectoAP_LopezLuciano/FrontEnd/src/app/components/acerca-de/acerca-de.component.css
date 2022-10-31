@@ -13,6 +13,11 @@ div{
     justify-content: center;
 }
 
+#borderDemo {
+    border: 4px outset #1C6EA4;
+    border-radius: 26px;
+    }
+
 
 #editar{
     align-items: center;

@@ -44,4 +44,8 @@
     font-style: normal;
     font-variant: normal;
     text-transform: uppercase;
+        border-bottom-width: 10px;
+        border-bottom-style: outset;
+        border-bottom-color: rgba(233,218,213,0.33);
+        border-radius: 30px 19px 20px 40px;
     }
