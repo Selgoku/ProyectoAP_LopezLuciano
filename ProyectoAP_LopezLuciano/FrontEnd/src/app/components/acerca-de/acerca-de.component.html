@@ -1,12 +1,3 @@
-<div>
-    <button type="button" class="btn btn-info" (click)="modal.showModal()" *ngIf="isLogged">
-        Abrir Modal
-    </button>
-    <app-modals [title]="'Editar Usuario'" #modal>
-        <app-nuevoproyecto></app-nuevoproyecto>
-    </app-modals>
-</div> 
-
 <div class="row"  *ngIf="persona" >
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src={{persona.img}} class="img-fluid" id="FotoPerfil" >
